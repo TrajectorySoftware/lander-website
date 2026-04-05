@@ -171,6 +171,10 @@ main {
   max-width: 520px;
 }
 
+.subpage-hero .tagline {
+  margin-top: 1.25rem;
+}
+
 /* Features */
 
 .features {
@@ -190,6 +194,21 @@ main {
   font-size: 0.95rem;
   color: var(--color-muted);
   line-height: 1.5;
+}
+
+/* CTA */
+
+.cta {
+  padding-bottom: 4rem;
+}
+
+.cta p {
+  font-size: 1rem;
+  color: var(--color-muted);
+}
+
+.cta a {
+  color: var(--color-text);
 }
 
 /* Footer */
