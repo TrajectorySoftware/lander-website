@@ -138,6 +138,60 @@ main {
   letter-spacing: -0.01em;
 }
 
+/* Nav active state */
+
+.nav-links a.active {
+  color: var(--color-text);
+}
+
+/* Subpage hero */
+
+.subpage-hero {
+  padding: 6rem 0 4rem;
+}
+
+.subpage-icon {
+  width: 32px;
+  height: 32px;
+  color: var(--color-muted);
+  margin-bottom: 1rem;
+}
+
+.subpage-hero h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+}
+
+.subpage-hero p {
+  margin-top: 1rem;
+  font-size: 1.15rem;
+  color: var(--color-muted);
+  max-width: 520px;
+}
+
+/* Features */
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding-bottom: 6rem;
+}
+
+.feature h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.feature p {
+  font-size: 0.95rem;
+  color: var(--color-muted);
+  line-height: 1.5;
+}
+
 /* Footer */
 
 footer {
@@ -170,5 +224,13 @@ footer p {
 
   .nav-links {
     gap: 1.25rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .subpage-hero h1 {
+    font-size: 1.8rem;
   }
 }
