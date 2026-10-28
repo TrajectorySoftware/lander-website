@@ -102,7 +102,7 @@ main {
 
 .products {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.5rem;
   padding-bottom: 6rem;
 }
@@ -228,6 +228,12 @@ footer p {
 
 /* Responsive */
 
+@media (max-width: 1000px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
     padding: 4rem 0 3rem;
@@ -241,8 +247,14 @@ footer p {
     grid-template-columns: 1fr;
   }
 
+  nav {
+    flex-wrap: wrap;
+    row-gap: 0.75rem;
+  }
+
   .nav-links {
-    gap: 1.25rem;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.25rem;
   }
 
   .features {
